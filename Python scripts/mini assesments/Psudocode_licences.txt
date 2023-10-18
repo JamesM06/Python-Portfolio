@@ -1,0 +1,17 @@
+amount ← ""
+amount AS String
+
+While True
+     OUTPUT "Amount of licences needed?" 
+     INPUT amount
+     IF amount > 0
+         END While
+     OUTPUT "Error wrong input"
+
+cost ← amount * 32
+OUTPUT "cost: {cost}"
+IF amount > 20
+     OUTPUT "10% off"
+     
+     cost ← cost/10
+OUTPUT "final cost: {cost}"
